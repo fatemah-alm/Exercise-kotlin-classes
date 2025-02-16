@@ -4,7 +4,11 @@ fun main() {
 //    book.title = "Python for dummies"
 //    book.author = "John Paul Mueller"
 //    book.yearPublished = 2006
+    book.getBookInfo()
 }
 
 class Book(var title: String,var author: String, var yearPublished: Int  ){
+    fun getBookInfo(){
+        println("$title by $author $yearPublished")
+    }
 }
